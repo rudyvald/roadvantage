@@ -1,5 +1,9 @@
 # RoadVantage Developer Test
 
+## Requirements
+
+PHP 7.X+
+
 ## Running
 
 On windows please run the application as shown:
