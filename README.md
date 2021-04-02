@@ -22,16 +22,16 @@ $obj->testAllVehicles();
 
 Extra method to run vehicle specific tests can be used as such:
 
-testVehicle($war, $yr, $cov, $mil)
-$war is the base warranty array key to test
-$yr is the year array key to test
-$cov is the coverage key to test
-$mil is the number of mileage to test
+    testVehicle($war, $yr, $cov, $mil)
+    $war is the base warranty array key to test
+    $yr is the year array key to test
+    $cov is the coverage key to test
+    $mil is the number of mileage to test
 
 
 ## Running the Unit Test
 
 Please run the phpunit test as such on windows:
 
-composer install
-"./vendor/bin/phpunit" vehicleTest.php
+    composer install
+    "./vendor/bin/phpunit" vehicleTest.php
