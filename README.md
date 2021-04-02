@@ -2,7 +2,7 @@
 
 ## Requirements
 
-PHP 7.X+
+PHP 7.X+, Composer
 
 ## Running
 
