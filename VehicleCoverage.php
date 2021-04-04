@@ -96,7 +96,7 @@ class VehicleCoverage{
         $suffix = [];
         $vehAge = $this->getVehAge($year); 
 
-        $status = $this->isUsedorNew($mileage, $coverage);
+        $status = $this->isUsedorNew($mileage, $make);
 
         $suffix[0] = $year['suffix1']; 
 
@@ -150,8 +150,8 @@ class VehicleCoverage{
         return (date("Y") - $year['modelyear']) * 12; 
     }
 
-    public function isUsedOrNew($mileage, $coverage){
-        if($mileage <= $coverage['miles']){ 
+    public function isUsedOrNew($mileage, $basecoverage){
+        if($mileage <= $basecoverage['miles']){ 
             $status = 'NEW';
         }
         else{
